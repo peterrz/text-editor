@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { RootState } from "../../app/store";
 
 export interface ThemeState {
-  value: String;
+  value: string;
 }
 
 const initialState: ThemeState = {
