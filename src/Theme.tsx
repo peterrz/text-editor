@@ -16,7 +16,7 @@ export const SecondaryTextColor = theme("theme", {
 });
 
 export const PrimaryTextColor = theme("theme", {
-  light: "#72747D",
+  light: "#2C2C30",
   dark: "#fff",
 });
 const sizes = {

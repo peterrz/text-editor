@@ -7,6 +7,8 @@ export const CheckBoxWrapper = styled.div`
   text-transform: capitalize;
   color: ${PrimaryTextColor};
   gap: 0.5rem;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
 `;
 export const CheckBoxLabel = styled.label`
   position: absolute;
