@@ -6,6 +6,7 @@ import {
   MenuIconClose,
   MenuItems,
   MenuItemLinks,
+  TitleContainer,
 } from "./sidebarStyle";
 import * as FaIcons from "react-icons/fa";
 import SwitchToggle from "../SwitchToggle/SwitchToggle";
@@ -43,6 +44,7 @@ const Sidebar: React.FunctionComponent = () => {
       <Navbar>
         <MenuIconOpen to="#" onClick={showSidebar}>
           <FaIcons.FaBars />
+          <TitleContainer>Editor</TitleContainer>
         </MenuIconOpen>
         <SwitchToggle
           name={theme}

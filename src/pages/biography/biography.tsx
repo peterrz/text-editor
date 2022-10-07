@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import {
-  StyledApp,
-  StyledPane,
-  StyledHeader,
-  StyledAppButton,
+  ModalContainer,
+  ModalSubTitle,
+  ButtonContainer,
+  Button,
 } from "./biographyStyle";
 import Modal from "../../components/modal/modal";
 interface IProps {}
@@ -39,6 +39,11 @@ class Biography extends Component<IProps, IState> {
   render() {
     return (
       <>
+        <ModalContainer>
+          <ModalSubTitle>Click to show the biography</ModalSubTitle>
+
+          <Button onClick={this.handleChange}>Show</Button>
+        </ModalContainer>
         <Modal show={this.state.show} handleClose={this.hideModal}></Modal>
       </>
     );

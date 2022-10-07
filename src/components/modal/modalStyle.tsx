@@ -16,7 +16,6 @@ export const MainContainer = styled.div`
 
 export const ModalContainer = styled.div`
   position: fixed;
-  background: white;
   width: 80%;
   height: max-content;
   top: 40%;
@@ -30,6 +29,7 @@ export const ModalContainer = styled.div`
   padding: 1rem 1.5rem;
   border: 1px solid #3f4047;
   border-radius: 12px;
+  z-index: 1;
 `;
 
 export const SubContainer = styled.div`

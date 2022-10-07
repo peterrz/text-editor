@@ -8,6 +8,7 @@ export const Navbar = styled.div`
   height: 3.5rem;
   background-color: ${PrimaryBackground};
   border-bottom: 1px solid #3f4047;
+  z-index: 1;
 `;
 
 export const MenuIconOpen = styled(Link)`
@@ -16,6 +17,13 @@ export const MenuIconOpen = styled(Link)`
   font-size: 1.5rem;
   margin-left: 2rem;
   color: ${PrimaryTextColor};
+`;
+
+export const TitleContainer = styled.div`
+  color: ${PrimaryTextColor};
+  font-size: 18px;
+  font-family: sans-serif;
+  margin-inline: 1rem;
 `;
 
 export const MenuIconClose = styled(Link)`

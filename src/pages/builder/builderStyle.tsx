@@ -5,9 +5,40 @@ import {
   SecondaryTextColor,
 } from "../../Theme";
 
+export const MainContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5;
+`;
+export const ColumnContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  height: 60%;
+  background-color: #fff;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  border: 1px dashed #aaa;
+  padding: 5px 0px;
+  gap: 0.5rem;
+`;
+
+export const Title = styled.div`
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: ${PrimaryTextColor};
+  text-align: justify;
+  margin-top: 2.5rem;
+`;
+
 export const ModalContainer = styled.div`
   color: ${PrimaryTextColor};
-  position: absolute;
+  position: relative;
   height: max-content;
   width: max-content;
   top: 40%;
@@ -19,16 +50,6 @@ export const ModalContainer = styled.div`
   flex-direction: row;
   gap: 1.5rem;
   z-index: 0;
-`;
-
-export const ModalSubTitle = styled.div`
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: ${SecondaryTextColor};
-  text-align: justify;
 `;
 
 export const ButtonContainer = styled.div`

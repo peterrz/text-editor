@@ -36,17 +36,3 @@ export const ChildernContinar = styled.div`
   background-color: ${PrimaryBackground};
   hight: 100hv;
 `;
-
-export const Footer = styled.div`
-  position: absolute;
-  bottom: 2%;
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  hight: max-content;
-  justify-content: start;
-  padding-top: 1rem;
-  width: 100%;
-  background-color: ${PrimaryBackground};
-  border-top: 1px solid #3f4047;
-`;
