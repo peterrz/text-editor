@@ -1,11 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import theme from "styled-theming";
 import "./App.css";
-import styled, { ThemeProvider } from "styled-components";
-import { useAppSelector, useAppDispatch } from "./app/hooks";
-import { selectTheme, change } from "./features/theme/themeSlice";
+import { ThemeProvider } from "styled-components";
+import { useAppSelector } from "./app/hooks";
+import { selectTheme } from "./features/theme/themeSlice";
 import Navigation from "./components/navigator/navigation";
 import GlobalStyles from "./globals/GlobalStyles";
 import Builder from "./pages/builder/builder";

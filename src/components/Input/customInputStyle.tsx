@@ -1,10 +1,4 @@
 import styled from "styled-components";
-import {
-  PrimaryBackground,
-  PrimaryTextColor,
-  SecondaryBackground,
-  SecondaryTextColor,
-} from "../../Theme";
 
 export const Input = styled.input.attrs((props: { color: string }) => props)`
   font-size: 18px;
@@ -22,6 +16,4 @@ export const Input = styled.input.attrs((props: { color: string }) => props)`
 export const Text = styled.p`
   font-size: 14px;
   margin: 0px 0px 2px 8px;
-
-  color: ${PrimaryTextColor};
 `;

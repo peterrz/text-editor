@@ -1,3 +1,23 @@
 a {
   text-decoration: none;
 }
+
+.editable {
+  font-family: sans-serif;
+
+  width: 100%;
+  min-height: 50vh;
+  border: 1px dashed #aaa;
+  background: #fff;
+  padding: 0.5rem;
+  resize: both;
+}
+
+.print {
+  padding: 1rem;
+}
+
+.colorWheel {
+  width: 100%;
+  align-self: center;
+}

@@ -1,28 +1,32 @@
 import styled from "styled-components";
-import {
-  PrimaryBackground,
-  PrimaryTextColor,
-  SecondaryTextColor,
-} from "../../Theme";
+import { PrimaryTextColor, device } from "../../Theme";
 
 export const MainContainer = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   gap: 5;
+  @media ${device.laptop} {
+    flex-direction: row;
+  }
 `;
 export const ColumnContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  justify-content: center;
-  height: 60%;
-  background-color: #fff;
-  margin-left: 1rem;
-  margin-top: 1rem;
-  border: 1px dashed #aaa;
-  padding: 5px 0px;
-  gap: 0.5rem;
+  display: none;
+  @media ${device.laptop} {
+    margin-left: 1rem;
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    background-color: #fff;
+    width: max-content;
+    margin-top: 1rem;
+    border: 1px dashed #aaa;
+    padding: 5px 0px;
+    gap: 0.5rem;
+  }
 `;
 
 export const Title = styled.div`
@@ -55,23 +59,40 @@ export const ModalContainer = styled.div`
 export const ButtonContainer = styled.div`
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: start;
 `;
 
 export const Button = styled.button`
-color: ${PrimaryTextColor},
-background: #0169CD;
-width: max-content;
-padding: 0.5rem;
-background-color: #0169CD; 
-color: white;
-border: none;
-padding: 10px 24px;
-text-align: center;
-text-decoration: none;
-display: flex;
-self-align: center;
-font-size: 16px;
-border-radius: 8px;
-margin-top: -8px;
+  width: max-content;
+  padding: 0.5rem;
+  background-color: #0169cd;
+  color: white;
+  border: none;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  self-align: center;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: -8px;
+`;
+
+export const FlexContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-inline: 0.5rem;
+  hight: max-content;
+  justify-content: space-between;
+`;
+
+export const Tools = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+  @media ${device.laptop} {
+    display: none;
+  }
 `;

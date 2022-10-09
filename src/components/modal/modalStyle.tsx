@@ -93,20 +93,18 @@ export const ButtonContainer = styled.div`
 `;
 
 export const Button = styled.button`
-color: ${PrimaryTextColor},
-background: #0169CD;
-width: max-content;
-padding: 0.5rem;
-background-color: #0169CD; 
-color: white;
-border: none;
-padding: 10px 24px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-margin-top: 1rem;
-border-radius: 8px;
+  width: max-content;
+  padding: 0.5rem;
+  background-color: #0169cd;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 1rem;
+  border-radius: 8px;
 `;
 
 export const ContentLink = styled.a`

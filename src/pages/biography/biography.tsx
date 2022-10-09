@@ -1,10 +1,5 @@
 import React, { Component } from "react";
-import {
-  ModalContainer,
-  ModalSubTitle,
-  ButtonContainer,
-  Button,
-} from "./biographyStyle";
+import { ModalContainer, ModalSubTitle, Button } from "./biographyStyle";
 import Modal from "../../components/modal/modal";
 interface IProps {}
 

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { PrimaryBackground, PrimaryTextColor, device } from "../../Theme";
+import { device } from "../../Theme";
 
 export const MainLayout = styled.div`
   height: 100%;
